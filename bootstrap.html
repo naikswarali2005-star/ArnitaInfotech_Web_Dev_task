@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>JavaScript Tutorial</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="icon" type="image/png" href="favicon.png"><!-- Shows favicon icon in browser tab -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-7.1.0-web/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= Top Navbar ================= -->
+    <nav class="navbar navbar-expand-lg top-nav">
+        <div class="container-fluid">
+
+            <a class="navbar-brand logo" href="#"><img src="favicon.png" alt="image Not Found..!"> Skills IT
+                Academy....!</a>
+
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#topMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="topMenu">
+                <ul class="navbar-nav me-auto">
+
+                    <li class="nav-item"><a class="nav-link" href="#">Tutorials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Exercises</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Certificates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+
+                </ul>
+
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search...">
+                    <button class="btn btn-success">Search</button>
+                </form>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- ================= Scrollable Subject Navbar ================= -->
+    <div class="subject-navbar">
+
+        <button class="scroll-btn left-btn" onclick="scrollLeftMenu()">❮</button>
+
+        <div class="subject-container" id="subjectMenu">
+
+            <a href="html.html" class="subject-link">HTML</a>
+            <a href="css.html" class="subject-link">CSS</a>
+            <a href="JavaScript.html" class="subject-link">JAVASCRIPT</a>
+            <a href="sql.html" class="subject-link">SQL</a>
+            <a href="python.html" class="subject-link">PYTHON</a>
+            <a href="Java.html" class="subject-link">JAVA</a>
+            <a href="php.html" class="subject-link">PHP</a>
+            <a href="bootstrap.html" class="subject-link">BOOTSTRAP</a>
+            <a href="react.html" class="subject-link">REACT</a>
+            <a href="#" class="subject-link">MYSQL</a>
+            <a href="#" class="subject-link">JQUERY</a>
+            <a href="#" class="subject-link">JAVA</a>
+            <a href="#" class="subject-link">PHP</a>
+            <a href="bootstrap.html" class="subject-link">BOOTSTRAP</a>
+            <a href="react.html" class="subject-link">REACT</a>
+            <a href="#" class="subject-link">MYSQL</a>
+            <a href="#" class="subject-link">JQUERY</a>
+
+        </div>
+
+        <button class="scroll-btn right-btn" onclick="scrollRightMenu()">❯</button>
+    </div>
+
+
+    <div class="main-layout">
+        <div class="sideber">
+            <h5>Basic JavaScript</h5>
+            <button class="dropdown-btn">Js Tutorial &#x25BC;</button>
+            <div class="dropdown-container">
+                <a onclick="showSection('home')">Js Tutorial</a>
+                <a onclick="showSection('intro')">Js Introduction</a>
+                <a onclick="showSection('output')">Js Output</a>
+            </div>
+            <button class="dropdown-btn">Js Syntax &#x25BC;</button>
+            <div class="dropdown-container">
+                <a onclick="showSection('syntax')">Js Syntax</a>
+            </div>
+            <button class="dropdown-btn">Js Variables &#x25BC;</button>
+            <div class="dropdown-container">
+                <a onclick="showSection('variables')">Js Variables</a>
+            </div>
+        </div>
+        <div class="content">
+            <div id="home" class="section active">
+                <h1>JavaScript Tutorial</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, dolorum?</p>
+            </div>
+            <div id="intro" class="section">
+                <h1>JavaScript Introduction</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, possimus? Atque quasi sunt sit ipsam
+                    molestiae consectetur, accusantium aut ea eaque officia dolore similique eveniet nostrum blanditiis,
+                    odio commodi quam perferendis deleniti alias ratione provident autem consequuntur soluta veritatis.
+                    Dolore temporibus laborum quae, excepturi numquam maiores ut sapiente explicabo doloribus odio
+                    inventore aliquam quod ea id aspernatur hic perspiciatis quam nihil aut delectus ex tempore voluptas
+                    recusandae ipsum? Molestias fuga provident nostrum consequuntur aspernatur! Incidunt porro corrupti
+                    et vero necessitatibus accusantium veritatis vel doloribus nemo esse saepe velit excepturi eum
+                    beatae nisi non quo labore soluta, ea quasi molestias sit?</p>
+            </div>
+            <div id="output" class="section">
+                <h1>JavaScript OutPut</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident quasi qui eaque, reprehenderit
+                    delectus voluptatem modi ab unde quam ipsam!</p>
+            </div>
+            <div id="syntax" class="section">
+                <h1>JavaScript Syntax</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati sapiente velit quaerat blanditiis
+                    corrupti, quos soluta nemo at culpa, alias fuga. Consequuntur minus, error ex officia illo obcaecati
+                    voluptas iste!</p>
+            </div>
+            <div id="variables" class="section">
+                <h1>JavaScript Variables</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dolorum itaque sunt repellendus
+                    nemo nulla eum. Facilis, laudantium, voluptates illum sequi eos debitis fugit quam adipisci odio
+                    perspiciatis maxime cumque, iste dolore incidunt. Magni ut rem obcaecati tenetur eum tempore
+                    doloremque. Illo sint dolores deserunt ratione. Voluptas at, ratione facere officiis sint
+                    repellendus, nemo exercitationem repudiandae asperiores eum, molestiae dolor architecto beatae enim
+                    voluptates delectus illo aliquid qui tenetur! Itaque repellat error eveniet impedit incidunt in
+                    veniam, similique, illum inventore consequatur illo saepe. Dolorem tempore architecto eum
+                    repellendus quos cumque placeat similique? Iusto quisquam vel porro quia ullam cupiditate officia
+                    vero quidem nostrum praesentium placeat sunt maxime accusantium, nihil saepe dolor corrupti
+                    necessitatibus. Voluptatibus optio magnam velit aliquid fuga nihil nobis illum, voluptatem error
+                    laboriosam dolorem odit, esse nisi doloremque cupiditate aperiam. Dignissimos perspiciatis ad
+                    aliquam cumque enim odio amet, at quidem iusto eum ab ipsum veritatis excepturi, nisi numquam aut
+                    cupiditate optio, quo dolorum repudiandae! Soluta corrupti excepturi consectetur perspiciatis
+                    accusantium, ipsa veniam. Repudiandae aspernatur necessitatibus reiciendis expedita asperiores
+                    cumque fuga nostrum deserunt maiores eius minus, maxime omnis temporibus nesciunt ad dicta illum
+                    modi quam quia at exercitationem quasi commodi optio. Illo aliquam assumenda impedit vitae,
+                    architecto dicta quae accusamus molestiae obcaecati vel saepe doloribus corrupti voluptate suscipit
+                    repellendus ea! Repudiandae ut voluptas id quod saepe assumenda quas maiores, earum minima, dolorum
+                    itaque iure corrupti officiis! Temporibus suscipit laborum illo, a dolorem et magnam voluptatem
+                    molestiae unde, aperiam, voluptatum expedita possimus officiis. Odio, quam placeat corrupti, culpa
+                    at iure dicta dolore esse odit quibusdam aperiam dolores sit nostrum, illum facere aliquid inventore
+                    praesentium. Laborum similique laudantium magni? Sed quis porro illum magni enim incidunt. Expedita
+                    officiis, eos dolor iure alias ex dicta adipisci, consequuntur aliquid voluptatem perferendis
+                    maiores iusto quas tenetur sequi deleniti ipsam, voluptate vitae itaque! Ea nobis aperiam fugit
+                    neque saepe libero iste, voluptas suscipit! Ducimus, nulla voluptatibus aliquam quia, blanditiis
+                    omnis expedita iste unde, harum consequuntur voluptatum architecto ipsam in quis. Hic deserunt
+                    consequatur cum esse, iste consequuntur nesciunt numquam reiciendis? Ducimus ea explicabo, velit
+                    voluptates dolor expedita nisi delectus nostrum dolore illo debitis architecto blanditiis
+                    perspiciatis ad perferendis deleniti repudiandae sequi possimus ratione? Veniam sed eaque pariatur
+                    ullam nesciunt incidunt excepturi cupiditate, quam totam mollitia, eius animi! Enim quam et commodi
+                    error rerum sapiente facere rem cum magni aperiam, hic nostrum dicta sed maiores optio molestias
+                    quidem expedita iste temporibus consectetur similique aliquam. Qui consequatur possimus beatae
+                    inventore quibusdam voluptatem sunt, non, nisi accusamus sapiente cupiditate molestias voluptatibus
+                    ullam. Cum ex quas asperiores assumenda iste libero nemo repudiandae totam deleniti, voluptatibus
+                    incidunt doloribus nesciunt, voluptate laudantium nam ducimus soluta, quos porro voluptatum
+                    consectetur provident enim molestiae quidem. Rerum vero officiis delectus ipsum necessitatibus atque
+                    reiciendis aliquam obcaecati voluptas laudantium, consequuntur molestiae quisquam odio voluptatum
+                    neque voluptates. Molestiae asperiores quod nemo sed, tempore ex ducimus quo et, voluptatibus eum
+                    explicabo ut harum minus laudantium, dicta vero debitis! Possimus illo iure aliquid nesciunt harum
+                    amet sint fugiat beatae quam dolorem! Itaque, quaerat ratione porro id expedita nihil voluptate
+                    dolorem molestias autem consequuntur distinctio repellat explicabo, quis minima amet facere! Quas
+                    aperiam recusandae sunt eaque, corrupti quam commodi iure dicta doloribus voluptate amet quia
+                    molestias incidunt, a, iusto voluptas. Quam, atque facere placeat autem quidem delectus distinctio
+                    illo laudantium, tempore saepe aliquid alias aliquam accusantium amet quod odio nulla ex ut
+                    voluptatum laboriosam iusto provident! Commodi ex debitis iure eligendi quae tempora autem quod
+                    necessitatibus aliquid exercitationem nobis soluta obcaecati perferendis, porro officiis quibusdam
+                    maxime architecto beatae ad possimus nisi magnam! Error, aperiam eius assumenda sit explicabo
+                    repellat ad quis aliquam molestiae nulla ullam perferendis porro commodi corrupti perspiciatis quod
+                    quam voluptas corporis atque veritatis? Incidunt provident similique, facilis facere ipsa at
+                    corporis rem impedit quasi explicabo itaque qui molestiae, maxime tenetur quo dolorem, vitae totam
+                    repellat rerum voluptas aliquid ipsum sit? Alias, nisi adipisci? Expedita cumque totam suscipit
+                    officia fugiat sequi, numquam earum omnis laborum hic ipsum dolores at sit quod dignissimos
+                    architecto rerum voluptatum eligendi officiis repellendus culpa assumenda? Totam, corporis, quia
+                    incidunt amet ipsum minus laborum possimus nobis ab magnam quos sunt omnis laboriosam! Reiciendis
+                    ratione quisquam modi dolor. Esse totam, ipsam eos nostrum expedita quisquam? Ab sed a accusantium
+                    tempore saepe. Dignissimos perspiciatis neque totam ea eum facere quisquam hic pariatur nostrum
+                    cupiditate veritatis voluptatum, dolorum autem corrupti nam possimus et, recusandae ad blanditiis!
+                    Ad alias repudiandae maxime, enim esse reiciendis maiores sit nulla minus voluptatem pariatur
+                    deserunt eos ipsam exercitationem, illum fugit nobis accusantium voluptas, eveniet est officia
+                    repellat incidunt. Corrupti voluptatem facilis fugiat. Voluptatem esse incidunt ipsa alias ducimus
+                    reprehenderit nulla nisi delectus unde blanditiis maxime tenetur minus, facere cupiditate
+                    repellendus, sed illo quibusdam aspernatur ipsam voluptatibus? Hic, illo. Dolorum earum omnis
+                    laboriosam nam distinctio alias. Hic repudiandae beatae delectus, dicta voluptates tempora ab amet
+                    atque, laboriosam possimus et, eligendi qui? Saepe quam, animi sunt aperiam minima distinctio
+                    aspernatur, libero optio odit sequi praesentium, similique mollitia vero excepturi aliquid
+                    necessitatibus sapiente eaque voluptas. Corporis nostrum doloribus dicta adipisci. Esse iusto non
+                    aliquam harum laudantium, error dolorum. Hic ducimus alias sequi quae sapiente voluptatibus
+                    architecto quidem expedita provident! A, alias perspiciatis ipsa esse nulla possimus. Ullam, itaque
+                    assumenda voluptates recusandae praesentium nulla minus fugiat atque deserunt enim, adipisci id
+                    natus in nobis beatae quas aperiam pariatur obcaecati soluta rerum earum excepturi. Voluptas
+                    quibusdam quas perspiciatis magnam fugiat voluptate vel, et consectetur debitis, maiores provident
+                    animi in quo facilis. Praesentium culpa optio recusandae nostrum? Excepturi vel veritatis atque
+                    eveniet aliquam asperiores adipisci dolores accusamus blanditiis quia necessitatibus neque quod,
+                    repellendus minus ipsam alias unde doloremque, cupiditate aspernatur natus quibusdam doloribus.
+                    Perspiciatis possimus dolore, eaque inventore, praesentium sequi minima saepe dolorum necessitatibus
+                    animi eius exercitationem laborum voluptas! Reiciendis omnis repudiandae dolor distinctio
+                    repellendus impedit, pariatur quam? Modi ullam similique deserunt veritatis explicabo minima, sint
+                    laudantium iste voluptatem neque in ducimus repellendus maxime nobis quasi fuga velit quis possimus
+                    ab. Repellat, cum dicta alias vel similique possimus nesciunt harum veritatis ad quidem assumenda
+                    obcaecati fuga enim dignissimos sunt perspiciatis iure. Aliquid inventore illo minus neque
+                    veritatis.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer-top-links">
+            <a href="#">PLUS</a>
+            <a href="#">SPACES</a>
+            <a href="#">GET CERTIFIED</a>
+            <a href="#">FOR TEACHERS</a>
+            <a href="#">BOOTSCAMPS</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 col-sm-6 mb-4">
+                <h5>Top Tutorials</h5>
+                <a href="#">HTML Tutorial</a>
+                <a href="#">CSS Tutorial</a>
+                <a href="#">JavaScript Tutorial</a>
+                <a href="#">How To Tutorial</a>
+                <a href="#">SQL Tutorial</a>
+                <a href="#">Python Tutorial</a>
+                <a href="#">Bootstrap Tutorial</a>
+                <a href="#">PHP Tutorial</a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <h5>Top Tutorials</h5>
+                <a href="#">HTML Tutorial</a>
+                <a href="#">CSS Tutorial</a>
+                <a href="#">JavaScript Tutorial</a>
+                <a href="#">How To Tutorial</a>
+                <a href="#">SQL Tutorial</a>
+                <a href="#">Python Tutorial</a>
+                <a href="#">Bootstrap Tutorial</a>
+                <a href="#">PHP Tutorial</a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <h5>Top Tutorials</h5>
+                <a href="#">HTML Tutorial</a>
+                <a href="#">CSS Tutorial</a>
+                <a href="#">JavaScript Tutorial</a>
+                <a href="#">How To Tutorial</a>
+                <a href="#">SQL Tutorial</a>
+                <a href="#">Python Tutorial</a>
+                <a href="#">Bootstrap Tutorial</a>
+                <a href="#">PHP Tutorial</a>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <h5>Top Tutorials</h5>
+                <a href="#">HTML Tutorial</a>
+                <a href="#">CSS Tutorial</a>
+                <a href="#">JavaScript Tutorial</a>
+                <a href="#">How To Tutorial</a>
+                <a href="#">SQL Tutorial</a>
+                <a href="#">Python Tutorial</a>
+                <a href="#">Bootstrap Tutorial</a>
+                <a href="#">PHP Tutorial</a>
+            </div>
+        </div>
+        <div class="footer-social">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-discord"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="footer-bottom">
+        <p>
+            Skills IT Academy is optimized for learning and training.
+            &copy; Skills IT Academy. All Right Resrved.
+        </p>
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="style.js"></script>
+</body>
+
+</html>
